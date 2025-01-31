@@ -37,33 +37,58 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">Hi, I'm <span class="text-emerald-400">Your Name</span></h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-8">Web Developer & UI Designer</p>
-            <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 px-8 py-3 rounded-full text-lg font-semibold transition">Hire Me</a>
+        <!-- Hero Section -->
+    <section id="home" class="min-h-screen relative flex items-center justify-center">
+        <!-- Background Image with Dark Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <img src="your-image.jpg" alt="Background" class="w-full h-full object-cover object-center">
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <!-- Your Profile -->
+            <div class="mb-8">
+                <div class="w-32 h-32 rounded-full border-4 border-emerald-400 mx-auto mb-6 overflow-hidden">
+                    <img src="your-profile.jpg" alt="Hasitha Randika" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hasitha Randika</h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+                    Full Stack Developer | UI/UX Enthusiast | Turning ideas into digital reality
+                </p>
+            </div>
+
+            <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 px-8 py-3 rounded-full text-lg font-semibold transition">
+                Hire Me
+            </a>
             <div class="mt-12 animate-bounce">
                 <i class="fas fa-chevron-down text-2xl text-gray-400"></i>
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Cards -->
-                <div class="bg-gray-900 rounded-lg p-6 hover:transform hover:scale-105 transition">
-                    <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Project 1</h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card -->
+            <div class="bg-gray-900 rounded-lg p-6 hover:transform hover:scale-105 transition">
+                <!-- Updated Image Section -->
+                <div class="relative overflow-hidden rounded-lg mb-4">
+                    <img 
+                        src="project01.png" 
+                        alt="Project Screenshot" 
+                        class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                        loading="lazy"
+                    >
                 </div>
-                <!-- Add more project cards -->
+                <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            <!-- Add more project cards -->
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-900">
